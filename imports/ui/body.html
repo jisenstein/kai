@@ -5,6 +5,7 @@
 <h1>Make your mark</h1>
 </div>
  
+ <div id="container">
  <div class="messages" id="messages">
     <ul>
       {{#each messages}}
@@ -70,9 +71,10 @@
     </div>
 
   </div>
-<script>
-  $('.messages').scrollTop($('.messages')[0].scrollHeight);
-</script>
+
+  <div id="bottom">&nbsp;</div>
+</div>
+
 </body>
  
 <template name="message">

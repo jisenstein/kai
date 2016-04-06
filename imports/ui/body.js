@@ -125,6 +125,14 @@ makeButton('bulge');
 }
 
 
+// setTimeout(function(){window.location.hash = '#bottom';},1000);
+      // $('.messages').scrollTop($('.messages')[0].scrollHeight);
+
+      $('body').animate({scrollTop: 99999}, 'slow');
+      //scrolls partway with 'body'
+
+
+
 
 function makeButton(name) {
 
