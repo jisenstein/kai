@@ -43,18 +43,16 @@ if (text.length > 0) {
       });
 
       if (mostRecent) {
-        console.log("inserting here");
         Tasks.insert({
           text,
           side: !mostRecent.side,
-            createdAt: new Date(), // current time
+          createdAt: new Date(), // current time
         });
       } else {
-       console.log("inserting now!");
        Tasks.insert({
         text,
         side: 0,
-          createdAt: new Date(), // current time
+        createdAt: new Date(), // current time
       });
     }
 
@@ -63,9 +61,7 @@ if (text.length > 0) {
 
     //target.textContent = '';
     $('body').scrollTop($('body')[0].scrollHeight);
-
   }
-
 
 
     }
@@ -129,9 +125,24 @@ makeButton('bulge');
       // $('.messages').scrollTop($('.messages')[0].scrollHeight);
 
       $('body').animate({scrollTop: 99999}, 'slow');
-      //scrolls partway with 'body'
 
 
+scroll = function(){
+  $('body').scrollTop($('body')[0].scrollHeight);
+  console.log("whatup");
+}
+// if (Meteor.isClient) {
+//   Tasks.before.update(function(userId, doc, fieldNames, modifier, options){
+//      scroll();
+//   })
+// }
+
+
+Tasks.find().observeChanges({
+   changed: function (text) {
+       scroll();
+   }
+});
 
 
 function makeButton(name) {

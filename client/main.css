@@ -21,8 +21,12 @@ body {
   width: 100vw;
   overflow-x: hidden;
 /*  overflow-y: hidden;*/
-  background-color: rgb(39, 220, 212);
+  background-color: white;
   height: 100%;
+}
+
+#container {
+  background-color: rgb(39, 220, 212);
 }
 
 .topbar{
@@ -526,14 +530,18 @@ input {
 
 
 @keyframes roll {
-  0% {
-    transform: rotate(90deg);
 
+  from {
+    transform: rotate(0deg)
+               translate(-5px)
+               rotate(0deg);
   }
-  
-  100% { 
-    transform:rotate(-270deg);
+  to {
+    transform: rotate(360deg)
+               translate(-5px) 
+               rotate(-360deg);
   }
+
 }
 
 @keyframes ellipsis {
