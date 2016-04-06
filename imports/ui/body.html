@@ -1,0 +1,80 @@
+
+<body>
+<div class="topbar" style="position:fixed;">
+<h2>Punctumotion<span class="updown punctumotion">.</span></h2>
+<h1>Make your mark</h1>
+</div>
+ 
+ <div class="messages" id="messages">
+    <ul>
+      {{#each messages}}
+        {{> message text=textWithSide}}
+      {{/each}}
+    </ul>
+
+  </div>
+
+  <div class="text-entry">
+  <div class="new-message text" id="input" contenteditable="true" spellcheck="false"></div>
+
+
+  <div class="button-row">
+
+    <button id="updown">
+      <span class="updown punctumotion">.</span>
+    </button>
+
+    <button id="hyper">
+      <span class="hyper punctumotion">.</span>
+    </button>
+
+    <button id="sarcastic">
+      <span class="sarcastic punctumotion">.</span>
+    </button>
+
+    <button id="ellipsis">
+      <span class="ellipsis punctumotion">.</span>
+    </button>
+
+
+    <button id="nervous">
+      <span class="nervous punctumotion">.</span>
+    </button>
+    <button id="anxious">
+      <span class="anxious punctumotion">.</span>
+    </button>
+
+    <button id="sad">
+      <span class="sad punctumotion">.</span>
+    </button>
+
+    </div>
+
+    <div class="button-row">
+
+    <button id="angry">
+      <span class="angry punctumotion">.</span>
+    </button>
+    <button id="confused">
+      <span class="confused punctumotion">.</span>
+    </button>
+
+    <button id="urgent">
+      <span class="urgent punctumotion">.</span>
+    </button>
+
+    <button id="bulge">
+      <span class="bulge punctumotion">.</span>
+    </button>
+
+    </div>
+
+  </div>
+<script>
+  $('.messages').scrollTop($('.messages')[0].scrollHeight);
+</script>
+</body>
+ 
+<template name="message">
+  {{{text}}}
+</template>
