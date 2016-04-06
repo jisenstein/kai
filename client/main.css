@@ -107,12 +107,12 @@ ul li {
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 3.5em;
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	margin-top: 14px;
-  margin-bottom: 20px;
+	margin-top: 10px;
+  margin-bottom: 16px;
   line-height: .85em;
 }
 
@@ -268,19 +268,85 @@ input {
     width: 400px;
 }
 
-/*#input {
-    -moz-appearance: textfield;
-    -webkit-appearance: textfield;
-    background-color: white;
-    background-color: -moz-field;
-    border: 1px solid darkgray;
-    box-shadow: 1px 1px 1px 0 lightgray inset;  
-    font: -moz-field;
-    font: -webkit-small-control;
+
+
+/*popup*/
+
+.steps {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#instructions {
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  position: relative;
+  display: none;  
+  background-color: none;
+  z-index: 5;
+}
+
+ .steps {
+   list-style: none;
+ }
+ .steps li {
+   counter-increment: item;
+   margin-bottom: 5px;
+ }
+
+ .steps li:before {
+    margin-right: 10px;
     margin-top: 5px;
-    padding: 2px 3px;
-    width: 398px;    
-}*/
+    content: counter(item);
+    background: white;
+    border-radius: 40px;
+    color: #0079CF;
+    width: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0px 2px rgba(0,0,0,.5);
+ }
+
+.stepbubble {
+  display: inline-block;
+  background-color: #0079CF;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #27DCD4;
+  padding: 8px 10px 8px 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+#info {
+float: right;
+margin-right: 20px;
+display: inline-block;
+top: 13px;
+right: 13px;
+position: absolute;
+    background: none;
+      border: 1px solid #27DCD4;
+    border-radius: 30px;
+    color: white;
+    width: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+#info:hover{
+  background: #27DCD4;
+  cursor: pointer;
+}
+
+
 
 /*animation*/
 
@@ -349,7 +415,7 @@ input {
 .ellipsis {
   animation: ellipsis linear 2.2s infinite;
   transform-origin: 50% 50%;
-  margin-right: .7em;
+  margin-right: .8em;
 }
 
 .bulge {
@@ -556,7 +622,7 @@ input {
   }
 
   25% {
-    transform:translateX(100%);
+    transform:translateX(80%);
     opacity: 0;
   }
 
@@ -565,12 +631,12 @@ input {
   }
 
   57% { 
-    transform:translateX(100%);
+    transform:translateX(80%);
     opacity: 0;
   }
 
   58% { 
-    transform:translateX(200%);
+    transform:translateX(160%);
     opacity: 0;
   }
 
@@ -579,7 +645,7 @@ input {
   }
 
   90% { 
-    transform:translateX(200%);
+    transform:translateX(160%);
     opacity: 0;
   }
 

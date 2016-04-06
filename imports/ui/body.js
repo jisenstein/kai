@@ -124,13 +124,14 @@ makeButton('bulge');
 // setTimeout(function(){window.location.hash = '#bottom';},1000);
       // $('.messages').scrollTop($('.messages')[0].scrollHeight);
 
-      $('body').animate({scrollTop: 99999}, 'slow');
+$('body').animate({scrollTop: 99999}, 2000, 'swing');
+  
 
 
-scroll = function(){
-  $('body').scrollTop($('body')[0].scrollHeight);
-  console.log("whatup");
-}
+// scroll = function(){
+//   $('body').scrollTop($('body')[0].scrollHeight);
+//   console.log("whatup");
+// }
 // if (Meteor.isClient) {
 //   Tasks.before.update(function(userId, doc, fieldNames, modifier, options){
 //      scroll();
