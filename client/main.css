@@ -25,8 +25,13 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 #container {
   background-color: rgb(39, 220, 212);
+  margin-top: -15px;
 }
 
 .topbar{
@@ -133,6 +138,7 @@ h2 {
   bottom: 0;
   transform: translate(-50%, 60px);
   max-width: 788px;
+  height: 190px;
 }
 
 
@@ -285,6 +291,7 @@ input {
   display: none;  
   background-color: none;
   z-index: 5;
+  height: 150px;
 }
 
  .steps {
@@ -317,7 +324,7 @@ input {
   border-radius: 5px;
   border: 1px solid #27DCD4;
   padding: 8px 10px 8px 10px;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 1px;
 }
 
@@ -326,8 +333,8 @@ input {
 float: right;
 margin-right: 20px;
 display: inline-block;
-top: 13px;
-right: 13px;
+top: 12px;
+right: 20px;
 position: absolute;
     background: none;
       border: 1px solid #27DCD4;
@@ -337,7 +344,7 @@ position: absolute;
     line-height: 1.5em;
     text-align: center;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 200;
     font-size: 1.5em;
 }
 
@@ -420,7 +427,6 @@ position: absolute;
 
 .bulge {
   animation: bulge linear 1s infinite;
-  line-height: .5em;
   transform-origin: 50% 50%;
 }
 

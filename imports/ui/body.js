@@ -139,11 +139,29 @@ $('body').animate({scrollTop: 99999}, 2000, 'swing');
 // }
 
 
-Tasks.find().observeChanges({
-   changed: function (text) {
-       scroll();
-   }
+// Tasks.find().observeChanges({
+//    changed: function (text) {
+//        scroll();
+//    }
+// });
+
+
+$(document).ready(function(){
+    $("#info").click(function(){
+        $("#keyboard").toggle();
+        $("#instructions").toggle();
+        if ($("#info").text() == "?") {
+            $("#info").html('<span class="updown punctumotion">.</span>');
+        }
+        else {
+            $("#info").text("?");
+        }
+    });
 });
+
+
+
+
 
 
 function makeButton(name) {
