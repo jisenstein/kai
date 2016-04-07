@@ -74,7 +74,7 @@ a {
     outline: none;
     box-shadow: inset 0px -2px #27DCD4;
     transition: .3s;
-    transform: translateY(1px);
+/*    transform: translateY(1px);*/
 }
 
 .messages {
@@ -304,7 +304,7 @@ input {
 
  .steps li:before {
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     content: counter(item);
     background: white;
     border-radius: 40px;
@@ -326,26 +326,28 @@ input {
   padding: 8px 10px 8px 10px;
   font-weight: 200;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 
 
 #info {
-float: right;
-margin-right: 20px;
-display: inline-block;
-top: 12px;
-right: 20px;
-position: absolute;
-    background: none;
-      border: 1px solid #27DCD4;
-    border-radius: 30px;
-    color: white;
-    width: 1.5em;
-    line-height: 1.5em;
-    text-align: center;
-    display: inline-block;
-    font-weight: 200;
-    font-size: 1.5em;
+  float: right;
+  margin-right: 20px;
+  display: inline-block;
+  top: 13px;
+  right: 0px;
+  position: absolute;
+  background: none;
+  border: 1px solid #27DCD4;
+  border-radius: 30px;
+  color: white;
+  width: 36px;
+  line-height: 1.5em;
+  height: 36px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 200;
+  font-size: 1.5em;
 }
 
 #info:hover{
