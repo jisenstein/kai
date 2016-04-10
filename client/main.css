@@ -27,6 +27,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 #container {
@@ -43,6 +44,32 @@ a {
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 4px;
+}
+
+.homebox {
+  margin-top: 30%;
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  max-height: 30vh;
+  background-color: white;
+  vertical-align: bottom;
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.try {
+  float: left;
+  margin-left: 5%;
+}
+
+.video {
+  float: right;
+  margin-right: 5%;
 }
 
 .text {
@@ -361,6 +388,10 @@ input {
   margin-left: 20px;
   top: 13px;
   left: 0px;
+}
+
+.feedback img {
+  max-width: 18px;
 }
 
 
@@ -837,6 +868,12 @@ input {
       font-size: 1em;
       width: 30px;
       height: 30px;
+    }
+
+    .homebox {
+      width: 100%;
+      float: none;
+      margin-left: 0;
     }
 
 }

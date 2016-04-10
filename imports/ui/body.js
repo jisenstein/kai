@@ -150,14 +150,14 @@ $('body').animate({scrollTop: 99999}, 2000, 'swing');
 
 
 $(document).ready(function(){
-    $("#info").click(function(){
+    $(".info").click(function(){
         $("#keyboard").toggle();
         $("#instructions").toggle();
-        if ($("#info").text() == "?") {
-            $("#info").html('<span class="updown punctumotion">.</span>');
+        if ($(".info").text() == "?") {
+            $(".info").html('<span class="updown punctumotion">.</span>');
         }
         else {
-            $("#info").text("?");
+            $(".info").text("?");
         }
     });
 });
