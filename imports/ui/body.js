@@ -118,6 +118,9 @@ makeButton('angry');
 makeButton('confused');
 makeButton('urgent');
 makeButton('bulge');
+makeButton('drop');
+makeButton('check');
+makeButton('woop');
 }
 
 

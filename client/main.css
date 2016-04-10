@@ -151,9 +151,7 @@ button {
   background-color: white;
   width: 40px;
   height: 40px;
-  padding-left: 8px;
-  padding-right: 2px;
-  margin: 6px;
+  margin: 4px 6px 6px 6px;
   text-align: left;
   box-shadow: 0px 1px #BEF5F2;
   transition: .5s;
@@ -330,12 +328,8 @@ input {
 }
 
 
-#info {
-  float: right;
-  margin-right: 20px;
+.circle {
   display: inline-block;
-  top: 13px;
-  right: 0px;
   position: absolute;
   background: none;
   border: 1px solid #27DCD4;
@@ -350,9 +344,23 @@ input {
   font-size: 1.5em;
 }
 
-#info:hover{
+.circle:hover{
   background: #27DCD4;
   cursor: pointer;
+}
+
+.info {
+  float: right;
+  margin-right: 20px;
+  top: 13px;
+  right: 0px;
+}
+
+.feedback {
+  float: left;
+  margin-left: 20px;
+  top: 13px;
+  left: 0px;
 }
 
 
@@ -418,6 +426,7 @@ input {
   transform-origin: 50% 50%;
   /*need to figure out position*/
   margin-right: .5em;
+  margin-left: 4px;
 
 }
 
@@ -430,6 +439,21 @@ input {
 .bulge {
   animation: bulge linear 1s infinite;
   transform-origin: 50% 50%;
+}
+
+.drop {
+  animation: drop linear 1s infinite;
+}
+
+.check {
+  animation: check linear 1.2s infinite;
+  margin-right: .4em;
+}
+
+.woop {
+  animation: woop linear 1s infinite;
+  margin-right: .4em;
+  transform-origin: -50% 40%;
 }
 
 
@@ -606,14 +630,15 @@ input {
 @keyframes roll {
 
   from {
-    transform: rotate(0deg)
-               translate(-5px)
-               rotate(0deg);
-  }
-  to {
     transform: rotate(360deg)
                translate(-5px) 
                rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg)
+           translate(-5px)
+           rotate(0deg);
+
   }
 
 }
@@ -679,6 +704,97 @@ input {
   }
 }
 
+@keyframes drop {
+  0% {
+    transform:translateY(-60%);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  
+  
+  25% {
+    transform:translateY(5%);
+    animation-timing-function: ease-out;
+
+  }
+  
+  30% {
+    transform:translateY(-5%) rotate(2deg);
+    opacity: 1;
+  } 
+  35% {
+    transform:translateY(0%) rotate(-2deg);
+  } 
+  40% {
+    transform:rotate(0deg);
+  } 
+
+}
+
+@keyframes check {
+  0%{
+    opacity: 0;
+  }
+
+  20% {
+    transform:translateY(0%);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(20%, 20%);
+  }
+
+  60% {
+    transform: translate(140%,-30%);
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(130%,-30%);
+    opacity: 0;
+
+  }
+}
+
+@keyframes woop {
+  0% { 
+    transform:rotate(0deg);
+    opacity: 0;
+  }
+  
+  30% { 
+    transform:rotate(0deg);
+    opacity: 1;
+  }
+ 
+  40% { 
+    opacity: 1;
+    transform: translateX(10%);
+  }
+
+
+  60% { 
+    transform:rotate(-50deg);
+  }
+
+  75% {
+    opacity: 0;
+    transform: translate(37%, -50%);
+  }
+  
+
+  100% { 
+    opacity: 0;
+        transform: translate(40%, -60%);
+  }
+
+
+
+}
 
 
 /*Screen size*/
