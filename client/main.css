@@ -33,6 +33,7 @@ a {
 #container {
   background-color: rgb(39, 220, 212);
   margin-top: -15px;
+  height: 100%;
 }
 
 .topbar{
@@ -396,6 +397,14 @@ input {
 
 .feedback img {
   max-width: 18px;
+}
+
+
+.typeform-widget {
+  display: none;
+  position: fixed;
+  top: 20;
+  left: 20;
 }
 
 
