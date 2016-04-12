@@ -1,7 +1,7 @@
 html {
 	font-family: "canada-type-gibson", sans-serif;
 	color: white;
-	background-color: #0079CF;
+	background-color: #27DCD4;
 	max-width: 100vw;
 	overflow-x: hidden;
 	text-align: center;
@@ -44,6 +44,10 @@ a {
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 4px;
+}
+
+.toptitle{
+  margin-left: -10px;
 }
 
 .homebox {
@@ -402,6 +406,7 @@ input {
   display: inline-block;
   width: .4em;
   font-size: 1.1em;
+  line-height: 1em;
 }
 
 .updown {
@@ -468,8 +473,10 @@ input {
 }
 
 .bulge {
-  animation: bulge linear 1s infinite;
+  animation: bulge linear 1.4s infinite;
   transform-origin: 50% 50%;
+
+
 }
 
 .drop {
@@ -482,8 +489,8 @@ input {
 }
 
 .woop {
-  animation: woop linear 1s infinite;
-  margin-right: .4em;
+  animation: woop linear 1.3s infinite;
+  margin-right: .2em;
   transform-origin: -50% 40%;
 }
 
@@ -574,7 +581,7 @@ input {
 }
 
 @keyframes confused {
-  0% {
+/*  0% {
     transform:  translate(0,0)  ;
     opacity: 0;
   }
@@ -611,7 +618,35 @@ input {
   }
   100%{
     opacity: 0;    
+  }*/
+
+0% {
+    transform:  translate(0,0)  ;
+    opacity: 0;
   }
+
+ 20% {
+  transform: translate(20%, -20%);
+ } 
+
+ 40% {
+  opacity: 1;
+  transform: rotate(10deg) translate(70%, -35%);
+ } 
+
+ 75% {
+  transform: rotate(-60deg)translate(55%, -50%);
+    opacity: 0;
+ }
+
+ 85% {
+  opacity: 0;
+ }
+
+ 100% {
+  opacity: 0;
+ }
+
 }
 
 @keyframes flash {
@@ -645,7 +680,7 @@ input {
 
 
   80% { 
-    transform:rotate(90deg);
+    transform:rotate(120deg) translate(-10%, -10%);
     opacity: 0;
     animation-timing-function: ease-in;
   }
@@ -726,12 +761,19 @@ input {
     -webkit-text-stroke: none;
   }
 
+  8% {
+    -webkit-text-stroke: .04em black;
+  }
   10% {
-    -webkit-text-stroke: .08em black;
+    -webkit-text-stroke: .09em black;
   }
 
   15% {
     -webkit-text-stroke: 0px;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
@@ -809,18 +851,19 @@ input {
 
 
   60% { 
-    transform:rotate(-50deg);
+    transform:rotate(-45deg);
+    opacity: 1;
   }
 
   75% {
     opacity: 0;
-    transform: translate(37%, -50%);
+    transform:translateY(-30%) rotate(-45deg);
+/*    transform: translate(37%, -50%);*/
   }
   
 
   100% { 
     opacity: 0;
-        transform: translate(40%, -60%);
   }
 
 
