@@ -173,6 +173,7 @@ h2 {
   transform: translate(-50%, 60px);
   max-width: 788px;
   height: 190px;
+  transition: .3s;
 }
 
 
@@ -357,6 +358,7 @@ input {
   background-color: none;
   z-index: 5;
   height: 150px;
+      transition: .3s;
 }
 
  .steps {
@@ -420,6 +422,7 @@ input {
   margin-right: 20px;
   top: 13px;
   right: 0px;
+  transition: .3s;
 }
 
 .feedback {
