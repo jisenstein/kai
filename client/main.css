@@ -121,6 +121,7 @@ iframe {
   margin-bottom: 150px;
   padding-bottom: 50px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 ul {
@@ -332,6 +333,14 @@ input {
 
 
 /*popup*/
+
+.chrome {
+    position: relative;
+    bottom: 6px;
+    right: 0;
+    font-size: 0.7em;
+    color: #27DCD4;
+}
 
 .steps {
   text-align: left;
