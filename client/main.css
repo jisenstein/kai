@@ -246,6 +246,31 @@ button:active {
 }
 
 
+.direction {
+  bottom: 180px;
+  position: fixed;
+  z-index: 4;
+  display: none;
+  color: white;
+  border-radius: 5px;
+/*  border: 1px solid #0079CF;
+*/  padding: 8px 10px 8px 10px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rightside {
+  right: 50px;
+}
+
+.leftside {
+  left: 50px;
+}
+
+
+
 
 //
 
@@ -349,7 +374,6 @@ input {
 
 .stepbubble {
   display: inline-block;
-  background-color: #0079CF;
   color: white;
   border-radius: 5px;
   border: 1px solid #27DCD4;
@@ -504,9 +528,71 @@ input {
 }
 
 
+.arrowright {
+  animation: arrowright linear 2.5s infinite;
+  trasnform-origin: 50% 50%;
+}
+
+.arrowleft {
+  animation: arrowleft linear 2s infinite;
+  trasnform-origin: 50% 50%;
+}
+
+
 
 
 /*animators*/
+@keyframes arrowright {
+  0% {
+    transform:  translate(0,35%)  ;
+  }
+
+  50% {
+    transform: translate(1970%, 35%);
+  }
+
+  70% {
+    transform: translate(1970%, 200%);
+  }
+
+  90% {
+    transform: translate(2500%, 200%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(2500%, 200%);
+    opacity: 0;
+  }
+}
+
+@keyframes arrowleft {
+  0% {
+    transform:  translate(0,35%)  ;
+  }
+
+  40% {
+    transform: translate(-1550%, 35%);
+  }
+
+  60% {
+    transform: translate(-1550%, 200%);
+  }
+
+  90% {
+    transform: translate(-2500%, 200%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-2500%, 200%);
+    opacity: 0;
+  }
+}
+
+
+
+
 @keyframes pacing{
   0% {
     transform:  translate(0,0)  ;
@@ -881,6 +967,14 @@ input {
 
 
 /*Screen size*/
+
+@media (min-width: 1300px) {
+    .direction {
+      display: inline-block;
+    }
+}
+
+
 
 @media (max-width: 800px) {
     .messages {
