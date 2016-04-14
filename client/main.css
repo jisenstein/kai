@@ -265,11 +265,11 @@ button:active {
 }
 
 .rightside {
-  right: 50px;
+  right: 350px;
 }
 
 .leftside {
-  left: 50px;
+  left: 330px;
 }
 
 
@@ -990,7 +990,7 @@ input {
 
 /*Screen size*/
 
-@media (min-width: 1300px) {
+@media (min-width: 1900px) {
     .direction {
       display: inline-block;
     }
