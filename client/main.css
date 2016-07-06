@@ -535,7 +535,7 @@ input {
 }
 
 .drop {
-  animation: drop linear 1s infinite;
+  animation: drop linear 1.1s infinite;
 }
 
 .check {
@@ -912,12 +912,16 @@ input {
     transform:translateY(-5%) rotate(2deg);
     opacity: 1;
   } 
-  35% {
+  33% {
     transform:translateY(0%) rotate(-2deg);
   } 
-  40% {
+  36% {
     transform:rotate(0deg);
   } 
+
+  100% {
+    transform:translateY(0%);
+  }
 
 }
 
