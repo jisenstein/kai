@@ -177,3 +177,5 @@ function makeButton(name) {
             return false;
         };
 }
+
+console.log("punctumotion!");
