@@ -149,7 +149,7 @@ h1 {
 	font-size: 3.5em;
 	font-weight: 800;
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	margin-top: 10px;
   margin-bottom: 16px;
   line-height: .85em;
@@ -157,8 +157,9 @@ h1 {
 
 h2 {
 	color: #27DCD4;
-  font-weight: 600;
+  font-weight: 800;
   margin: 0;
+  font-family: "akagi-pro", sans-serif;
 }
 
 .text-entry {
