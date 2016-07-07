@@ -45,6 +45,8 @@ a {
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 4px;
+  font-family: "akagi-pro", sans-serif;
+  color: white;
 }
 
 .toptitle{
@@ -159,7 +161,6 @@ h2 {
 	color: #27DCD4;
   font-weight: 800;
   margin: 0;
-  font-family: "akagi-pro", sans-serif;
 }
 
 .text-entry {
