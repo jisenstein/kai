@@ -158,9 +158,10 @@ h1 {
 }
 
 h2 {
-	color: #27DCD4;
+	color: white;
   font-weight: 800;
   margin: 0;
+  font-size: 3.5em;
 }
 
 .text-entry {
